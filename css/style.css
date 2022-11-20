@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+/* "temporary" class for disabling animation on page load */
+body.preload *{
+  animation-duration: 0s !important;
+}
+
+body {
+  background-color: #FAEAD6;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-width: 768px;
+}
+
+h1, p, a {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  background-color: white;
+  border: 2px #333333 solid;
+  width: 100%;
+  min-width: 570px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.nav-item {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.15s;
+}
+
+nav div {
+  display: flex;
+}
+
+.left-nav-item {
+  color: #333333;
+  text-decoration: none;
+  align-self: center;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  /* transition: 0.15s; (making unwanted effect) */
+}
+
+.nav-item:hover,
+.left-nav-item:hover {
+  color: lightgrey;
+}
+
+.card {
+  align-items: center;
+  background-color:#E5F3E4;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 125px;
+  margin-bottom: 100px;
+  padding: 0;
+  max-width: 718px;
+  border: 2px #333333 solid;
+}
+
+h1 {
+  margin: 50px 0;
+  font-size: 90px;
+}
+
+.profile-image {
+  margin-top: 70px;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  border: 1.5px #333333 solid;
+  animation-duration: 4s;
+  animation-name: beating;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icons {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 0 0 16px 16px;
+  border-top: 2px #333333 solid;
+  background-color: #DDEAF2;
+}
+
+.icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 70px 0;
+}
+
+.icons li {
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 1px #333333 solid;
+  background-color: white;
+  animation-duration: 0.3s;
+  animation-name: pop-out;
+}
+
+.icons li:hover,
+.btn:hover,
+.submitBtn:hover {
+  transform: scale(1.15);
+  animation-duration: 0.3s;
+  animation-name: pop-in;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.17);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-anchors {
+  align-self: center;
+  padding: 22%;
+  border-radius: 50%;
+}
+
+footer {
+  border: 2px #333333 solid;
+  background-color: #f8ba84;
+  max-width: 718px;
+  text-align: center;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  border-radius: 16px;
+}
+
+/* ABOUT PAGE */
+
+.about-text {
+  margin: 100px auto 50px;
+  max-width: 500px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.about-text h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.iframe-container {
+  border: 2px #333333 solid;
+  max-width: 900px;
+  height: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 225px;
+}
+
+.divButtons {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.nextBtn,
+.prevBtn {
+  height: 130px;
+  width: 130px;
+  border-radius: 75px;
+  margin: 0 30px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: white;
+  border: 1.5px #333333 solid;
+  animation-duration: 0.3s;
+  animation-name: pop-out;
+}
+
+/* CONTACT PAGE */
+
+.contact-h1 {
+  text-align: center;
+  margin-top: 125px;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+form ul{
+  border: 2px #333333 solid;
+  background-color: #ECCCE9;
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 20px;
+}
+
+.ul-form li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+label {
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+}
+
+input, textarea, select {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px #333333 solid;
+}
+
+.submitBtn {
+  display: block;
+  margin: 50px auto;
+  height: 150px;
+  width: 300px;
+  max-width: 300px;
+  border-radius: 75px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: white;
+  border: 1.5px #333333 solid;
+  animation-duration: 0.3s;
+  animation-name: pop-out;
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="preload">
+  <nav>
+    <div>
+      <a href="https://www.itc.tech/" class="left-nav-item">ITC Precourse Project</a>
+    </div>
+
+    <ul>
+      <li><a href="../index.html" class="nav-item">Home</a></li>
+      <li><a href="./about.html" class="nav-item">About</a></li>
+      <li><a href="./contact.html" class="nav-item">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="contact-h1">Get in touch!</h1>
+
+  <form action="https://formspree.io/f/mpzndzob" method="POST" name="myForm">
+    <ul class="ul-form">
+      <li><label>
+          First Name:
+          <input type="text" name="first-name">
+        </label></li>
+      <li><label>
+          Last Name:
+          <input type="text" name="last-name">
+        </label></li>
+      <li><label>
+          Your email:
+          <input type="email" name="email">
+        </label></li>
+      <li><label>
+          Choose your preference:
+          <select name="pets" id="pets">
+            <option disabled selected value="noSelection"> -- select an option -- </option>
+            <option value="Cats">Cats</option>
+            <option value="Dogs">Dogs</option>
+          </select>
+        </label></li>
+      <li><label>
+          Add your comment:
+          <textarea rows="4" name="message" id="textarea"></textarea>
+        </label></li>
+    </ul>
+    <button type="submit" disabled="disabled" class="submitBtn">Send</button>
+  </form>
+
+  <footer>
+    <!--footer content in javascript-->
+  </footer>
+  <script src="../js/footer.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>
